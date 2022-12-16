@@ -317,10 +317,21 @@ return [
             'icon'        => 'fas fa-home text-warning',
         ],
         [
+            'text'        => 'Thống kê',
+            'url'         => 'admin/dashboard',
+            'icon'        => 'fas fa-home text-warning',
+        ],
+        [
             'text'        => 'Quản lý sản phẩm',
             'url'         => 'admin/products',
             'icon'        => 'fas fa-home text-warning',
         ],
+        [
+            'text'        => 'Quản lý hoá đơn',
+            'url'         => 'admin/orders',
+            'icon'        => 'fas fa-home text-warning',
+        ],
+
 
 
 

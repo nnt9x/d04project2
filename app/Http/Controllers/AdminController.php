@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\Product;
     use Illuminate\Http\Request;
 
     class AdminController extends Controller
@@ -19,10 +20,19 @@
 
         function viewAllProduct()
         {
-            return view('admin/product/index');
+            $products = Product::all();
+//            dd($products);
+            return view('admin/product/index',['products'=>$products]);
         }
 
         function viewSettings(){
             return view('admin/settings');
+        }
+
+        function viewOrders(){
+
+        }
+        function viewDashboard(){
+
         }
     }
