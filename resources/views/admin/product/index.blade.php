@@ -2,6 +2,18 @@
 
 @section('content')
     <h1 class="text-center mx-1">Danh sách sản phẩm</h1>
+
+    <a  href="#"> Thêm một sản phẩm </a>
+    <br>
+
+    <form action="{{url('/admin/products/importExcel')}}" method="post" enctype="multipart/form-data">
+        @csrf
+        <label for="Inputfile" class="btn btn-primary"> Thêm từ Excel </label>
+        <br>
+        <input id="Inputfile" hidden type="file" name="fileExcel" required>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+<br>
     <table id="productsTable" class="table table-sm table-striped table-bordered">
         <thead>
         <tr class="table-primary">

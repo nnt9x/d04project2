@@ -25,6 +25,8 @@ Route::get('home', function (){
 
 Route::get('/admin/home',[AdminController::class, 'viewHome'] );
 Route::get('/admin/products',[AdminController::class,'viewAllProduct']);
+Route::post('/admin/products/importExcel',[AdminController::class,'importProductsExcel']);
+
 Route::get('/admin/settings',[AdminController::class,'viewSettings']);
 Route::get('/admin/dashboard',[AdminController::class,'viewDashboard']);
 Route::get('/admin/orders',[AdminController::class,'viewOrders']);
